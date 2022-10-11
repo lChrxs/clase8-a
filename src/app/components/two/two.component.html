@@ -1,0 +1,7 @@
+<input type="text" name="pokemon" placeholder="pokmeon" [(ngModel)]="pokemon" (input)="onChange()">
+
+<div *ngIf="pokemon$ | async as pokemon">
+  <!-- {{pokemon | json}} -->
+  <p>{{pokemon.name}}</p>
+  <img [src]="pokemon.sprites.front_default" alt="">
+</div>

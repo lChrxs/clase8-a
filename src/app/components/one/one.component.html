@@ -1,0 +1,11 @@
+<form>
+
+    <label for="username">Username</label>
+    <input type="text" name="username" id="username" aria-describedby="username" [(ngModel)]="username">
+    <br>
+    <label for="password">Password</label>
+    <input type="password" name="password" id="password" aria-describedby="password" [(ngModel)]="password">
+    <br>
+    <button type="submit" (click)="onSubmit()">Log in</button>
+
+</form>
